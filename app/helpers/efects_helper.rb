@@ -1,0 +1,2 @@
+module EfectsHelper
+end

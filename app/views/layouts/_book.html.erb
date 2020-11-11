@@ -1,0 +1,6 @@
+<% @books.each do |book| %>
+  <div class="space"><%= book.title %></div>
+  <div class="space"><%= book.author %></div>
+  <div class="space"><%= book.item_caption %></div>
+  <div class="space"><%= link_to (image_tag(book.medium_image_url)), book.item_url %></div>
+  <% end %>

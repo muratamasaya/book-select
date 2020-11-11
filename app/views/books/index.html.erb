@@ -1,19 +1,57 @@
-
 <body>
 <div class="main_cap">
 <div class="left_cap">
 <%= video_tag("/assets/videos/image.mov", :autoplay =>true,:loop => true, muted: :true, style: "width:100%;") %>
 </div>
 <div class="side_bar">
+<div class="reason">
+<ul>
+<li><%= link_to '・貴方が気になる本を調べてみよう', search_path %></li>
+<li><%= link_to '・読書をするメリット', efects_path %></li>
+<li><%= link_to '・読書がもたらす脳の変化', changes_path %></li>
+<li></li>
+</ul>
+</div>
 </div>
 </div>
 </body>
 
 <footer>
 <div class="bottom_ber">
-<div class="book_search">
-<%= link_to "図書館を探す", 'http://api.calil.jp/library' %>
+<div class="bottom_message">
+<p>&nbsp;&nbsp;&nbsp;図書館で<span class="under">静かに</span>本を読みたい方は</p>
+<p>こちらから<span class="under">図書館</span>と<span class="under">御希望の本</span>について検索できます。</p>
 </div>
+
+<div class="book_search">
+<link href="https://calil.jp/public/css/download/searchbox.css" rel="stylesheet" type="text/css" />
+<form action="https://calil.jp/searchw" method="get" class="calil_form">
+<a href="http://calil.jp/" target="_blank" class="calil_logo calil_blue"></a>
+<input type="hidden" name="encoding" value="utf8"> 
+
+<input name="q" type="text" size="32" value="" class="calil_query">
+ <input type="submit"  class="calil_submit">
+</form>
+
+ <script type="text/javascript">
+		var calil = new Calil({
+			'appkey' : ENV['KEY'],
+			'render': new CalilRender(),
+			'isbn' : isbn_list,
+			'systemid' : systemid_list
+		});
+		calil.search();
+	}
+
+	function log(text){
+		try{
+			console.log(text);
+		}catch( e ){}
+  }
+
+</script>
+
+
 </div>
 </footer>
 

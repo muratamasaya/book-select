@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BookSelect</title>
+    <title>BookSelect></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,11 +12,7 @@
   <header>
   <div class="nav">
 <div class="title">
-<h1>BOOK SELECT</h1>
-</div>
-<div class="nav__right">
-<%= link_to "ログイン", "#", class: :nav__btn %>
-<%= link_to "新規登録", "#", class: :nav__btn %>
+<h1><%= link_to "BookSelect", root_path %></h1>
 </div>
 </div>
 </header>
