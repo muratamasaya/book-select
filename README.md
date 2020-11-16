@@ -29,12 +29,12 @@
 ## 実装した機能のGIF
 
 楽天API使用時
-https://gyazo.com/53e2d95b733e32baf69ed814db3ee7d3
+https://gyazo.com/d038a606e89e387fdf59b6266642dcbf
 
 映像をクリックすると楽天市場での購入ページに繋がっており、そのまま購入手続きに進みます。
 
 図書館API使用時
-https://gyazo.com/43ed0d1e5b25a13d912c14ff9e17caaa
+https://gyazo.com/e0fd888624d6909ee43e427a04aeda8f
 さがすをクリックした先で地域の指定ができ指定をしていれば地域での貸し出し状況なども調べる事ができます。
 
 
